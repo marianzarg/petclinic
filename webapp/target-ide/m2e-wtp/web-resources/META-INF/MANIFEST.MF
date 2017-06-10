@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Build-Java: 1.8.0_66
+Build-Label: 1.0-SNAPSHOT
+Built-By: Usuario
+Build-Host: 
+Build-Maven: Maven ${maven.version}
+Build-Time: 2017-06-10T19:05:29Z
+Build-OS: Windows 10
+Build-User: Usuario
+Build-Jdk: 1.8.0_66
+Created-By: Maven Integration for Eclipse
+
