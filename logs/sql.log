@@ -1,0 +1,73 @@
+2017-06-10 18:13:46.368 La columna ""DELETEME1497129226365"."UNUSED"" añadió a la representación de la table.
+2017-06-10 18:13:46.371 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
+2017-06-10 18:13:46.371 Crear la tabla "DELETEME1497129226365"
+2017-06-10 18:13:46.373 CREATE TABLE "DELETEME1497129226365"
+(
+    "UNUSED" int4 NOT NULL
+)
+2017-06-10 18:13:46.376 Tiempo de cumplir = 3 ms
+2017-06-10 18:13:46.379 No era posible determinar el nombre del catalogo por este DataStore
+2017-06-10 18:13:46.379 Borrar la tabla "DELETEME1497129226365"
+2017-06-10 18:13:46.379 DROP TABLE "DELETEME1497129226365" CASCADE
+2017-06-10 18:13:46.380 Tiempo de cumplir = 1 ms
+2017-06-10 18:13:46.634 La columna ""DELETEME1497129226634"."UNUSED"" añadió a la representación de la table.
+2017-06-10 18:13:46.635 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
+2017-06-10 18:13:46.635 Crear la tabla "DELETEME1497129226634"
+2017-06-10 18:13:46.635 CREATE TABLE "DELETEME1497129226634"
+(
+    "UNUSED" int4 NOT NULL
+)
+2017-06-10 18:13:46.637 Tiempo de cumplir = 2 ms
+2017-06-10 18:13:46.640 No era posible determinar el nombre del catalogo por este DataStore
+2017-06-10 18:13:46.640 Borrar la tabla "DELETEME1497129226634"
+2017-06-10 18:13:46.640 DROP TABLE "DELETEME1497129226634" CASCADE
+2017-06-10 18:13:46.642 Tiempo de cumplir = 2 ms
+2017-06-10 18:13:46.741 La columna ""simple"."SimpleObject"."id"" añadió a la representación de la table.
+2017-06-10 18:13:46.741 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BIGINT but sql-type=BIGINT is not found. Using default sql-type for this jdbc-type.
+2017-06-10 18:13:46.742 Campo [DATASTORE_ID] -> Columnas ["simple"."SimpleObject"."id"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2017-06-10 18:13:46.743 La tabla "simple"."SimpleObject" va a manejar la persistencia de los campos de la clase domainapp.dom.simple.SimpleObject (estrategia de heredar="new-table")
+2017-06-10 18:13:46.744 La columna ""simple"."SimpleObject"."apellido"" añadió a la representación de la table.
+2017-06-10 18:13:46.745 Campo [domainapp.dom.simple.SimpleObject.apellido] -> Columnas ["simple"."SimpleObject"."apellido"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-10 18:13:46.746 La columna ""simple"."SimpleObject"."dni"" añadió a la representación de la table.
+2017-06-10 18:13:46.746 Campo [domainapp.dom.simple.SimpleObject.dni] -> Columnas ["simple"."SimpleObject"."dni"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-10 18:13:46.746 La columna ""simple"."SimpleObject"."name"" añadió a la representación de la table.
+2017-06-10 18:13:46.746 Campo [domainapp.dom.simple.SimpleObject.name] -> Columnas ["simple"."SimpleObject"."name"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-10 18:13:46.747 La columna ""simple"."SimpleObject"."notes"" añadió a la representación de la table.
+2017-06-10 18:13:46.747 Campo [domainapp.dom.simple.SimpleObject.notes] -> Columnas ["simple"."SimpleObject"."notes"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-10 18:13:46.749 La columna ""simple"."SimpleObject"."sexo"" añadió a la representación de la table.
+2017-06-10 18:13:46.749 Campo [domainapp.dom.simple.SimpleObject.sexo] -> Columnas ["simple"."SimpleObject"."sexo"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.EnumMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-10 18:13:46.749 La columna ""simple"."SimpleObject"."version"" añadió a la representación de la table.
+2017-06-10 18:13:46.750 Attempt to find JDBC driver 'typeInfo' for jdbc-type=TIMESTAMP but sql-type=TIMESTAMP is not found. Using default sql-type for this jdbc-type.
+2017-06-10 18:13:46.750 Campo [VERSION] -> Columnas ["simple"."SimpleObject"."version"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.VersionTimestampMapping" (org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping)
+2017-06-10 18:13:46.750 Table/View "simple"."SimpleObject" ha sido inicializado
+2017-06-10 18:13:46.752 Empezando transaccion del esquema con conneccion "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@364c93e6" y isolacion "serializable"
+2017-06-10 18:13:46.753 Check of existence of "simple"."SimpleObject" returned no table
+2017-06-10 18:13:46.753 Crear la tabla "simple"."SimpleObject"
+2017-06-10 18:13:46.753 CREATE TABLE "simple"."SimpleObject"
+(
+    "id" SERIAL,
+    "apellido" varchar(40) NOT NULL,
+    "dni" varchar(40) NOT NULL,
+    "name" varchar(40) NOT NULL,
+    "notes" varchar(4000) NULL,
+    "sexo" varchar(40) NOT NULL,
+    "version" timestamptz NOT NULL,
+    CONSTRAINT "SimpleObject_PK" PRIMARY KEY ("id")
+)
+2017-06-10 18:13:46.813 Tiempo de cumplir = 59 ms
+2017-06-10 18:13:46.817 Crear la llave unica "SimpleObject_dni_UNQ" en catalogo "" equema ""simple""
+2017-06-10 18:13:46.818 ALTER TABLE "simple"."SimpleObject" ADD CONSTRAINT "SimpleObject_dni_UNQ" UNIQUE ("dni")
+2017-06-10 18:13:46.841 Tiempo de cumplir = 23 ms
+2017-06-10 18:13:46.841 Committing transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@364c93e6"
+2017-06-10 18:13:46.842 Cerrando la conneccion de la transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@364c93e6"
+2017-06-10 18:13:56.720 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"
+2017-06-10 18:13:57.151 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"
+2017-06-10 18:13:57.156 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"
+2017-06-10 18:14:22.523 INSERT INTO "simple"."SimpleObject" ("apellido","dni","name","notes","sexo","version") VALUES (<'Lahoz'>,<'31665333'>,<'Mariano'>,<null>,<'Masculino'>,<2017-06-10 18:14:22.522>)
+2017-06-10 18:14:22.592 SELECT "A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."id" = <1>
+2017-06-10 18:14:24.629 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"
+2017-06-10 18:14:24.667 SELECT "A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."id" = <1>
+2017-06-10 18:14:27.706 SELECT "A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."id" = <1>
+2017-06-10 18:14:29.497 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"
+2017-06-10 18:14:29.515 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"
+2017-06-10 18:14:29.516 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0"

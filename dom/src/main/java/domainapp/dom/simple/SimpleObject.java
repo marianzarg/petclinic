@@ -71,7 +71,7 @@ public class SimpleObject implements Comparable<SimpleObject> {
 
     //region > title
     public TranslatableString title() {
-        return TranslatableString.tr("Cliente: {name}", "name", getName(),getApellido());
+        return TranslatableString.tr("Cliente: {name}", "name", getName() +" " + getApellido());
     }
     //endregion
 

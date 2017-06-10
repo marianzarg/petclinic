@@ -53,7 +53,7 @@ public class SimpleObjectMenu {
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
     @MemberOrder(sequence = "2")
-    public List<SimpleObject> findByName(
+    public List<SimpleObject> buscarPorNombre(
             @ParameterLayout(named="Name")
             final String name
     ) {
