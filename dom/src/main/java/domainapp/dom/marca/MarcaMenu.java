@@ -16,7 +16,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package domainapp.dom.simple;
+package domainapp.dom.marca;
 
 import java.util.List;
 
@@ -31,59 +31,46 @@ import org.apache.isis.applib.annotation.ParameterLayout;
 import org.apache.isis.applib.annotation.SemanticsOf;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
 
+
 @DomainService(
         nature = NatureOfService.VIEW_MENU_ONLY,
-        repositoryFor = SimpleObject.class
+        repositoryFor = Marca.class
 )
 @DomainServiceLayout(
-        named = "Simple Objects",
+        named = "Marcas",
         menuOrder = "10"
 )
-public class SimpleObjectMenu {
+public class MarcaMenu {
 
-
-    @Action(semantics = SemanticsOf.SAFE)
+	@Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
     @MemberOrder(sequence = "1")
-    public List<SimpleObject> listAll() {
-        return simpleObjectRepository.listAll();
+    public List<Marca> listarMarcas() {
+        return marcaRepository.listarMarcas();
     }
 
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
     @MemberOrder(sequence = "2")
-    public List<SimpleObject> buscarPorNombre(
-            @ParameterLayout(named="Name")
-            final String name
+    public List<Marca> buscarPorNombre(
+            @ParameterLayout(named="Nombre")
+            final String nombre
     ) {
-        return simpleObjectRepository.findByName(name);
-    }
-    
-    @Action(semantics = SemanticsOf.SAFE)
-    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
-    @MemberOrder(sequence = "3")
-    public List<SimpleObject> buscarPorDNI(
-            @ParameterLayout(named="DNI")
-            final String dni
-    ) {
-        return simpleObjectRepository.buscarPorDNI(dni);
+        return marcaRepository.findByName(nombre);
     }
 
-    public static class CreateDomainEvent extends ActionDomainEvent<SimpleObjectMenu> {}
+    public static class CreateDomainEvent extends ActionDomainEvent<MarcaMenu> {}
     @Action(domainEvent = CreateDomainEvent.class)
-    @MemberOrder(sequence = "4")
-    public SimpleObject create(
-            @ParameterLayout(named="Name") final String name, 
-            @ParameterLayout(named="Apellido") final String apellido,
-    		@ParameterLayout(named="DNI") final String dni,
-    		@ParameterLayout(named="Sexo") final Sexo sexo)
+    @MemberOrder(sequence = "3")
+    public Marca create(
+            @ParameterLayout(named="Nombre") final String nombre)
     {
-        return simpleObjectRepository.create(name,apellido,dni,sexo);
+        return marcaRepository.crear(nombre);
     }
 
 
     @javax.inject.Inject
-    SimpleObjectRepository simpleObjectRepository;
+    MarcaRepository marcaRepository;
 
 }

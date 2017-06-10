@@ -16,7 +16,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package domainapp.dom.simple;
+package domainapp.dom.marca;
 
 import java.util.List;
 
@@ -28,32 +28,25 @@ import org.apache.isis.applib.services.repository.RepositoryService;
 
 @DomainService(
         nature = NatureOfService.DOMAIN,
-        repositoryFor = SimpleObject.class
+        repositoryFor = Marca.class
 )
-public class SimpleObjectRepository {
+public class MarcaRepository {
 
-    public List<SimpleObject> listAll() {
-        return repositoryService.allInstances(SimpleObject.class);
+    public List<Marca> listarMarcas() {
+        return repositoryService.allInstances(Marca.class);
     }
 
-    public List<SimpleObject> findByName(final String name) {
+    public List<Marca> findByName(final String nombre) {
         return repositoryService.allMatches(
                 new QueryDefault<>(
-                        SimpleObject.class,
-                        "findByName",
-                        "name", name));
-    }
-    
-    public List<SimpleObject> buscarPorDNI(final String dni) {
-        return repositoryService.allMatches(
-                new QueryDefault<>(
-                        SimpleObject.class,
-                        "buscarPorDNI",
-                        "dni", dni));
+                        Marca.class,
+                        "buscarPorNombre",
+                        "nombre", nombre));
     }
 
-    public SimpleObject create(final String name,final String apellido, final String dni, final Sexo sexo) {
-        final SimpleObject object = new SimpleObject(name, apellido, dni,sexo);
+
+    public Marca crear(final String nombre) {
+        final Marca object = new Marca(nombre);
         serviceRegistry.injectServicesInto(object);
         repositoryService.persist(object);
         return object;

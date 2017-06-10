@@ -16,7 +16,7 @@
  *  specific language governing permissions and limitations
  *  under the License.
  */
-package domainapp.dom.simple;
+package domainapp.dom.marca;
 
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.VersionStrategy;
@@ -49,38 +49,29 @@ import org.apache.isis.applib.util.ObjectContracts;
         strategy= VersionStrategy.DATE_TIME,
         column="version")
 @javax.jdo.annotations.Queries({
-    @javax.jdo.annotations.Query(
-            name = "findByName", language = "JDOQL",
-            value = "SELECT "
-                    + "FROM domainapp.dom.simple.SimpleObject "
-                    + "WHERE name.indexOf(:name) >= 0 "),
-    @javax.jdo.annotations.Query(
-            name = "buscarPorDNI", language = "JDOQL",
-            value = "SELECT "
-                    + "FROM domainapp.dom.simple.SimpleObject "
-                    + "WHERE dni.indexOf(:dni) >= 0 ")
-    
+        @javax.jdo.annotations.Query(
+                name = "buscarPorNombre", language = "JDOQL",
+                value = "SELECT "
+                        + "FROM domainapp.dom.simple.marca "
+                        + "WHERE nombre.indexOf(:nombre) >= 0 "),        
 })
 
-@javax.jdo.annotations.Unique(name="SimpleObject_dni_UNQ", members = {"dni"})
+@javax.jdo.annotations.Unique(name="Marca_nombre_UNQ", members = {"nombre"})
 @DomainObject(
         publishing = Publishing.ENABLED,
         auditing = Auditing.ENABLED
 )
-public class SimpleObject implements Comparable<SimpleObject> {
+public class Marca implements Comparable<Marca> {
 
     //region > title
     public TranslatableString title() {
-        return TranslatableString.tr("Cliente: {name}", "name", getName() +" " + getApellido());
+        return TranslatableString.tr("Marca: {nombre}", "nombre", getNombre());
     }
     //endregion
 
     //region > constructor
-    public SimpleObject(final String name, final String apellido, final String dni,final Sexo sexo) {
-        setName(name);
-        setApellido(apellido);
-        setDni(dni);
-        setSexo(sexo);
+    public Marca(final String nombre) {
+        setNombre(nombre);
     }
     //endregion
 
@@ -88,109 +79,41 @@ public class SimpleObject implements Comparable<SimpleObject> {
     public static final int NAME_LENGTH = 40;
 
     @javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
-    private String name;
+    private String nombre;
     @Property(
             editing = Editing.DISABLED
     )
-    public String getName() {
-        return name;
-    }
-    public void setName(final String name) {
-        this.name = name;
-    }
-    
-    @javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
-    private String apellido;
-    
-    @Property(
-            editing = Editing.DISABLED
-    )
-    public String getApellido() {
-		return apellido;
+    public String getNombre() {
+		return nombre;
 	}
 
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
-	
-	 @javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
-	 private String dni;
-	 
-	public String getDni() {
-			return dni;
-	}
-
-	public void setDni(String dni) {
-			this.dni = dni;
-	}
-	
-	@javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
-	public Sexo sexo;
-	public Sexo getSexo() {
-		return sexo;
-	}
-
-	public void setSexo(Sexo sexo) {
-		this.sexo = sexo;
-	}
-	
-	
-	
-	
-	
 	
     //endregion
 	
 	//region > updateName (action)
-    public static class UpdateNameDomainEvent extends ActionDomainEvent<SimpleObject> {}
+    public static class UpdateNameDomainEvent extends ActionDomainEvent<Marca> {}
     @Action(
             command = CommandReification.ENABLED,
             publishing = Publishing.ENABLED,
             semantics = SemanticsOf.IDEMPOTENT,
             domainEvent = UpdateNameDomainEvent.class
     )
-    public SimpleObject updateName(@ParameterLayout(named="Name") final String name) {
-        setName(name);
+    public Marca updateName(@ParameterLayout(named="Nombre") final String nombre) {
+        setNombre(nombre);
         return this;
     }
-    
-    public SimpleObject updateApellido(@ParameterLayout(named="Apellido") final String apellido){
-        setApellido(apellido);
-        return this;
-        
-    }
-    
-    public SimpleObject updateDNI(@ParameterLayout(named="DNI") final String dni){
-    	setDni(dni);
-    	return this;
-    }
-    
-    public SimpleObject updateSexo(@ParameterLayout(named="sexo") final Sexo sexo){
-    	setSexo(sexo);
-    	return this;
-    }
-    
-    
+   
     public String default0UpdateName() {
 
-    	return getName();
+    	return getNombre();
     }
     
-    public String default0UpdateApellido(){
-    	
-    	return getApellido();
-    }
     
-    public String default0UpdateDNI(){
-    	return getDni();
-    }
-    
-    public Sexo default0UpdateSexo(){
-    	return getSexo();
-    }
-    
-    public TranslatableString validate0UpdateName(final String name) {
-        return name != null && name.contains("!")? TranslatableString.tr("Exclamation mark is not allowed"): null;
+    public TranslatableString validate0UpdateName(final String nombre) {
+        return nombre != null && nombre.contains("!")? TranslatableString.tr("Exclamation mark is not allowed"): null;
     }
     
     //endregion
@@ -198,7 +121,7 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //region > notes (editable property)
     public static final int NOTES_LENGTH = 4000;
 
-    public static class NotesDomainEvent extends PropertyDomainEvent<SimpleObject,String> {}
+    public static class NotesDomainEvent extends PropertyDomainEvent<Marca,String> {}
     @javax.jdo.annotations.Column(
             allowsNull="true",
             length = NOTES_LENGTH
@@ -218,7 +141,7 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //endregion
 
     //region > delete (action)
-    public static class DeleteDomainEvent extends ActionDomainEvent<SimpleObject> {}
+    public static class DeleteDomainEvent extends ActionDomainEvent<Marca> {}
     @Action(
             domainEvent = DeleteDomainEvent.class,
             semantics = SemanticsOf.NON_IDEMPOTENT_ARE_YOU_SURE
@@ -234,11 +157,11 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //region > toString, compareTo
     @Override
     public String toString() {
-        return ObjectContracts.toString(this, "name", "apellido", "dni", "sexo");
+        return ObjectContracts.toString(this, "nombre");
     }
     @Override
-    public int compareTo(final SimpleObject other) {
-        return ObjectContracts.compare(this, other, "name", "apellido", "dni","sexo");
+    public int compareTo(final Marca other) {
+        return ObjectContracts.compare(this, other, "nombre");
     }
 
     //endregion
