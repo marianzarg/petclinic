@@ -1,0 +1,19 @@
+2017-06-11 18:14:19.313 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
+    <chg:majorVersion>1</chg:majorVersion>
+    <chg:minorVersion>0</chg:minorVersion>
+    <chg:transactionId>257f221d-531c-4b58-9eb8-3ee5fff4921c</chg:transactionId>
+    <chg:sequence>3</chg:sequence>
+    <chg:completedAt>2017-06-11T18:14:19.301-03:00</chg:completedAt>
+    <chg:user>sven</chg:user>
+    <chg:objects>
+        <chg:loaded>0</chg:loaded>
+        <chg:created>
+            <com:oid type="simple.SimpleObject" id="3"/>
+        </chg:created>
+        <chg:updated/>
+        <chg:deleted/>
+        <chg:propertiesModified>6</chg:propertiesModified>
+    </chg:objects>
+</chg:changesDto>
+

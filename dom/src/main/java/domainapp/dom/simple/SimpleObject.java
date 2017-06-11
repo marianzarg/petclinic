@@ -63,7 +63,7 @@ import org.apache.isis.applib.util.ObjectContracts;
             name = "listarActivos", language = "JDOQL",
             value = "SELECT "
                     + "FROM domainapp.dom.simple.SimpleObject "
-                    + "WHERE idActivo.indexOf(:idActivo) == 1 ")
+                    + "WHERE idActivo == '1' ")
     
     
 })

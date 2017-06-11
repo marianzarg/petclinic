@@ -1,0 +1,6 @@
+2017-06-11 18:14:19.296 257f221d-531c-4b58-9eb8-3ee5fff4921c,0: simple.SimpleObject:3 by sven, name: [NEW] -> Ignacio
+2017-06-11 18:14:19.299 257f221d-531c-4b58-9eb8-3ee5fff4921c,0: simple.SimpleObject:3 by sven, apellido: [NEW] -> Rojas
+2017-06-11 18:14:19.299 257f221d-531c-4b58-9eb8-3ee5fff4921c,0: simple.SimpleObject:3 by sven, dni: [NEW] -> 5578852
+2017-06-11 18:14:19.299 257f221d-531c-4b58-9eb8-3ee5fff4921c,0: simple.SimpleObject:3 by sven, sexo: [NEW] -> Masculino
+2017-06-11 18:14:19.299 257f221d-531c-4b58-9eb8-3ee5fff4921c,0: simple.SimpleObject:3 by sven, notes: [NEW] -> null
+2017-06-11 18:14:19.301 257f221d-531c-4b58-9eb8-3ee5fff4921c,0: simple.SimpleObject:3 by sven, idActivo: [NEW] -> 1
