@@ -27,7 +27,7 @@ public class SimpleObjectTest {
 
     @Before
     public void setUp() throws Exception {
-        simpleObject = new SimpleObject("Foobar", "Test Apellido", "TestDNI", null);
+        simpleObject = new SimpleObject("Foobar", "Test Apellido", "TestDNI", null, null);
     }
 
     public static class Name extends SimpleObjectTest {

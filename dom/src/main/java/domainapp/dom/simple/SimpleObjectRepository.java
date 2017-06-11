@@ -36,6 +36,13 @@ public class SimpleObjectRepository {
         return repositoryService.allInstances(SimpleObject.class);
     }
 
+    public List<SimpleObject> listarActivos(){
+    	 return repositoryService.allMatches(
+                 new QueryDefault<>(
+                         SimpleObject.class,
+                         "listarActivos"));
+    }
+    
     public List<SimpleObject> findByName(final String name) {
         return repositoryService.allMatches(
                 new QueryDefault<>(
@@ -53,7 +60,7 @@ public class SimpleObjectRepository {
     }
 
     public SimpleObject create(final String name,final String apellido, final String dni, final Sexo sexo) {
-        final SimpleObject object = new SimpleObject(name, apellido, dni,sexo);
+        final SimpleObject object = new SimpleObject(name, apellido, dni,sexo,"1");
         serviceRegistry.injectServicesInto(object);
         repositoryService.persist(object);
         return object;

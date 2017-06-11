@@ -97,7 +97,7 @@ msgstr ""
 
 #: domainapp.dom.simple.SimpleObject#delete()
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 
 #: domainapp.dom.simple.SimpleObject#downloadJdoMetadata()

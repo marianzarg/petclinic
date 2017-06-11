@@ -32,6 +32,7 @@ public class QSimpleObject extends PersistableExpressionImpl<SimpleObject> imple
     public final StringExpression apellido;
     public final StringExpression dni;
     public final ObjectExpression<domainapp.dom.simple.Sexo> sexo;
+    public final StringExpression idActivo;
     public final NumericExpression<Integer> NOTES_LENGTH;
     public final StringExpression notes;
     public final ObjectExpression<org.apache.isis.applib.services.repository.RepositoryService> repositoryService;
@@ -46,6 +47,7 @@ public class QSimpleObject extends PersistableExpressionImpl<SimpleObject> imple
         this.apellido = new StringExpressionImpl(this, "apellido");
         this.dni = new StringExpressionImpl(this, "dni");
         this.sexo = new ObjectExpressionImpl<domainapp.dom.simple.Sexo>(this, "sexo");
+        this.idActivo = new StringExpressionImpl(this, "idActivo");
         this.NOTES_LENGTH = new NumericExpressionImpl<Integer>(this, "NOTES_LENGTH");
         this.notes = new StringExpressionImpl(this, "notes");
         this.repositoryService = new ObjectExpressionImpl<org.apache.isis.applib.services.repository.RepositoryService>(this, "repositoryService");
@@ -61,6 +63,7 @@ public class QSimpleObject extends PersistableExpressionImpl<SimpleObject> imple
         this.apellido = new StringExpressionImpl(this, "apellido");
         this.dni = new StringExpressionImpl(this, "dni");
         this.sexo = new ObjectExpressionImpl<domainapp.dom.simple.Sexo>(this, "sexo");
+        this.idActivo = new StringExpressionImpl(this, "idActivo");
         this.NOTES_LENGTH = new NumericExpressionImpl<Integer>(this, "NOTES_LENGTH");
         this.notes = new StringExpressionImpl(this, "notes");
         this.repositoryService = new ObjectExpressionImpl<org.apache.isis.applib.services.repository.RepositoryService>(this, "repositoryService");

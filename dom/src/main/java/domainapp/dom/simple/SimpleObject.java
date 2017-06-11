@@ -58,7 +58,13 @@ import org.apache.isis.applib.util.ObjectContracts;
             name = "buscarPorDNI", language = "JDOQL",
             value = "SELECT "
                     + "FROM domainapp.dom.simple.SimpleObject "
-                    + "WHERE dni.indexOf(:dni) >= 0 ")
+                    + "WHERE dni.indexOf(:dni) >= 0 "),
+    @javax.jdo.annotations.Query(
+            name = "listarActivos", language = "JDOQL",
+            value = "SELECT "
+                    + "FROM domainapp.dom.simple.SimpleObject "
+                    + "WHERE idActivo.indexOf(:idActivo) == 1 ")
+    
     
 })
 
@@ -76,11 +82,12 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //endregion
 
     //region > constructor
-    public SimpleObject(final String name, final String apellido, final String dni,final Sexo sexo) {
+    public SimpleObject(final String name, final String apellido, final String dni,final Sexo sexo, String idActivo) {
         setName(name);
         setApellido(apellido);
         setDni(dni);
         setSexo(sexo);
+        setIdActivo(idActivo);
     }
     //endregion
 
@@ -134,13 +141,22 @@ public class SimpleObject implements Comparable<SimpleObject> {
 		this.sexo = sexo;
 	}
 	
-	
-	
+	@javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
+	 private String idActivo;
+	public String getIdActivo() {
+		return idActivo;
+	}
+
+	public void setIdActivo(String idActivo) {
+		this.idActivo = "1";
+	}
 	
 	
 	
     //endregion
 	
+	
+
 	//region > updateName (action)
     public static class UpdateNameDomainEvent extends ActionDomainEvent<SimpleObject> {}
     @Action(
@@ -234,11 +250,11 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //region > toString, compareTo
     @Override
     public String toString() {
-        return ObjectContracts.toString(this, "name", "apellido", "dni", "sexo");
+        return ObjectContracts.toString(this, "name", "apellido", "dni", "sexo", "idActivo");
     }
     @Override
     public int compareTo(final SimpleObject other) {
-        return ObjectContracts.compare(this, other, "name", "apellido", "dni","sexo");
+        return ObjectContracts.compare(this, other, "name", "apellido", "dni","sexo","idActivo");
     }
 
     //endregion

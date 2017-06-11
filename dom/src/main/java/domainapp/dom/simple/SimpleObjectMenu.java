@@ -81,6 +81,15 @@ public class SimpleObjectMenu {
     {
         return simpleObjectRepository.create(name,apellido,dni,sexo);
     }
+    
+    @Action(semantics = SemanticsOf.SAFE)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+    @MemberOrder(sequence = "5")
+    public List<SimpleObject> listarActivos(
+           
+    ) {
+        return simpleObjectRepository.listarActivos();
+    }
 
 
     @javax.inject.Inject
