@@ -148,15 +148,11 @@ public class SimpleObject implements Comparable<SimpleObject> {
 	}
 
 	public void setIdActivo(String idActivo) {
-		this.idActivo = "1";
+		this.idActivo = idActivo;
 	}
-	
-	
-	
+		
     //endregion
 	
-	
-
 	//region > updateName (action)
     public static class UpdateNameDomainEvent extends ActionDomainEvent<SimpleObject> {}
     @Action(
@@ -165,7 +161,7 @@ public class SimpleObject implements Comparable<SimpleObject> {
             semantics = SemanticsOf.IDEMPOTENT,
             domainEvent = UpdateNameDomainEvent.class
     )
-    public SimpleObject updateName(@ParameterLayout(named="Name") final String name) {
+    public SimpleObject actualizarName(@ParameterLayout(named="Name") final String name) {
         setName(name);
         return this;
     }
@@ -186,8 +182,13 @@ public class SimpleObject implements Comparable<SimpleObject> {
     	return this;
     }
     
+    public SimpleObject updateActivo(@ParameterLayout(named="idActivo") final String idActivo) {
+        setIdActivo("0");
+        return this;
+    }
     
-    public String default0UpdateName() {
+    
+    public String default0ActualizarName() {
 
     	return getName();
     }
@@ -205,7 +206,11 @@ public class SimpleObject implements Comparable<SimpleObject> {
     	return getSexo();
     }
     
-    public TranslatableString validate0UpdateName(final String name) {
+    public String default0UpdateActivo(){
+    	return getIdActivo();
+    }
+    
+    public TranslatableString validate0ActualizarName(final String name) {
         return name != null && name.contains("!")? TranslatableString.tr("Exclamation mark is not allowed"): null;
     }
     
@@ -239,10 +244,15 @@ public class SimpleObject implements Comparable<SimpleObject> {
             domainEvent = DeleteDomainEvent.class,
             semantics = SemanticsOf.NON_IDEMPOTENT_ARE_YOU_SURE
     )
-    public void delete() {
-        final String title = titleService.titleOf(this);
-        messageService.informUser(String.format("'%s' deleted", title));
-        repositoryService.remove(this);
+//
+//    public void delete() {
+//        final String title = titleService.titleOf(this);
+//        messageService.informUser(String.format("'%s' deleted", title));
+//        repositoryService.remove(this);
+//    }
+//    
+    public void borrarCliente(){
+    	setIdActivo("0");
     }
 
     //endregion

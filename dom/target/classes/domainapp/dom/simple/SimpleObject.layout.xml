@@ -31,9 +31,9 @@
                     <bs3:row>
                         <bs3:col span="12">
                             <c:fieldSet name="Name">
-                                <c:action id="delete"/>
+                                <c:action id="borrarCliente"/>
                                 <c:property id="name" namedEscaped="true">
-                                    <c:action id="updateName"/>
+                                    <c:action id="actualizarName"/>
                                 </c:property>
                                 <c:property id="apellido" namedEscaped="true">
                                     <c:action id="updateApellido"/>
@@ -43,6 +43,9 @@
                                 </c:property>
                                 <c:property id="sexo" namedEscaped="true">
                                     <c:action id="updateSexo"/>
+                                </c:property>
+                                <c:property id="idActivo" namedEscaped="true">
+                                    <c:action id="updateActivo"/>
                                 </c:property>
                                 <c:property id="notes" namedEscaped="true" multiLine="10" hidden="ALL_TABLES"/>
                             </c:fieldSet>

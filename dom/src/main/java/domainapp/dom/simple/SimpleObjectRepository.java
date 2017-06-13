@@ -59,8 +59,8 @@ public class SimpleObjectRepository {
                         "dni", dni));
     }
 
-    public SimpleObject create(final String name,final String apellido, final String dni, final Sexo sexo) {
-        final SimpleObject object = new SimpleObject(name, apellido, dni,sexo,"1");
+    public SimpleObject create(final String name,final String apellido, final String dni, final Sexo sexo, final String idActivo) {
+        final SimpleObject object = new SimpleObject(name, apellido, dni,sexo, idActivo);
         serviceRegistry.injectServicesInto(object);
         repositoryService.persist(object);
         return object;

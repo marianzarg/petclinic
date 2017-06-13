@@ -74,12 +74,14 @@ public class SimpleObjectMenu {
     @Action(domainEvent = CreateDomainEvent.class)
     @MemberOrder(sequence = "4")
     public SimpleObject create(
+    		
             @ParameterLayout(named="Name") final String name, 
             @ParameterLayout(named="Apellido") final String apellido,
     		@ParameterLayout(named="DNI") final String dni,
     		@ParameterLayout(named="Sexo") final Sexo sexo)
+    		
     {
-        return simpleObjectRepository.create(name,apellido,dni,sexo);
+        return simpleObjectRepository.create(name,apellido,dni,sexo,"1");
     }
     
     @Action(semantics = SemanticsOf.SAFE)
