@@ -1,38 +1,19 @@
-2017-06-25 14:36:39.516 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+2017-06-25 15:19:56.624 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
     <chg:majorVersion>1</chg:majorVersion>
     <chg:minorVersion>0</chg:minorVersion>
-    <chg:transactionId>ffeffc42-2374-48ad-a692-d3519d21b176</chg:transactionId>
+    <chg:transactionId>2a46b901-01f6-4311-a82d-8bb9ae9fab4f</chg:transactionId>
     <chg:sequence>3</chg:sequence>
-    <chg:completedAt>2017-06-25T14:36:39.512-03:00</chg:completedAt>
+    <chg:completedAt>2017-06-25T15:19:56.618-03:00</chg:completedAt>
     <chg:user>sven</chg:user>
     <chg:objects>
         <chg:loaded>0</chg:loaded>
         <chg:created>
-            <com:oid type="simple.Marca" id="3"/>
+            <com:oid type="simple.Marca" id="5"/>
         </chg:created>
         <chg:updated/>
         <chg:deleted/>
         <chg:propertiesModified>3</chg:propertiesModified>
-    </chg:objects>
-</chg:changesDto>
-
-2017-06-25 14:37:24.224 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<chg:changesDto xmlns:com="http://isis.apache.org/schema/common" xmlns:chg="http://isis.apache.org/schema/chg">
-    <chg:majorVersion>1</chg:majorVersion>
-    <chg:minorVersion>0</chg:minorVersion>
-    <chg:transactionId>38429042-9c60-424d-b1d8-fc6a7f01a111</chg:transactionId>
-    <chg:sequence>5</chg:sequence>
-    <chg:completedAt>2017-06-25T14:37:24.224-03:00</chg:completedAt>
-    <chg:user>sven</chg:user>
-    <chg:objects>
-        <chg:loaded>1</chg:loaded>
-        <chg:created/>
-        <chg:updated>
-            <com:oid type="simple.Marca" id="3"/>
-        </chg:updated>
-        <chg:deleted/>
-        <chg:propertiesModified>1</chg:propertiesModified>
     </chg:objects>
 </chg:changesDto>
 

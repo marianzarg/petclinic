@@ -74,8 +74,9 @@ public class Marca implements Comparable<Marca> {
     //endregion
 
     //region > constructor
-    public Marca(final String nombre) {
+    public Marca(final String nombre, final Blob attachment)  {
         setNombre(nombre);
+        setAttachment(attachment);
     }
     //endregion
 

@@ -1,102 +1,193 @@
-2017-06-25 14:35:44.569 La columna ""DELETEME1498412144563"."UNUSED"" añadió a la representación de la table.
-2017-06-25 14:35:44.573 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:44.574 Crear la tabla "DELETEME1498412144563"
-2017-06-25 14:35:44.578 CREATE TABLE "DELETEME1498412144563"
+2017-06-25 15:18:27.950 La columna ""DELETEME1498414707942"."UNUSED"" añadió a la representación de la table.
+2017-06-25 15:18:27.955 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:27.955 Crear la tabla "DELETEME1498414707942"
+2017-06-25 15:18:27.960 CREATE TABLE "DELETEME1498414707942"
 (
     "UNUSED" int4 NOT NULL
 )
-2017-06-25 14:35:45.645 Tiempo de cumplir = 1066 ms
-2017-06-25 14:35:45.653 No era posible determinar el nombre del catalogo por este DataStore
-2017-06-25 14:35:45.654 Borrar la tabla "DELETEME1498412144563"
-2017-06-25 14:35:45.654 DROP TABLE "DELETEME1498412144563" CASCADE
-2017-06-25 14:35:45.656 Tiempo de cumplir = 2 ms
-2017-06-25 14:35:46.561 La columna ""DELETEME1498412146561"."UNUSED"" añadió a la representación de la table.
-2017-06-25 14:35:46.562 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:46.563 Crear la tabla "DELETEME1498412146561"
-2017-06-25 14:35:46.563 CREATE TABLE "DELETEME1498412146561"
+2017-06-25 15:18:27.970 Tiempo de cumplir = 10 ms
+2017-06-25 15:18:27.976 No era posible determinar el nombre del catalogo por este DataStore
+2017-06-25 15:18:27.976 Borrar la tabla "DELETEME1498414707942"
+2017-06-25 15:18:27.976 DROP TABLE "DELETEME1498414707942" CASCADE
+2017-06-25 15:18:27.978 Tiempo de cumplir = 2 ms
+2017-06-25 15:18:28.688 La columna ""DELETEME1498414708688"."UNUSED"" añadió a la representación de la table.
+2017-06-25 15:18:28.688 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:28.688 Crear la tabla "DELETEME1498414708688"
+2017-06-25 15:18:28.689 CREATE TABLE "DELETEME1498414708688"
 (
     "UNUSED" int4 NOT NULL
 )
-2017-06-25 14:35:46.702 Tiempo de cumplir = 139 ms
-2017-06-25 14:35:46.710 No era posible determinar el nombre del catalogo por este DataStore
-2017-06-25 14:35:46.710 Borrar la tabla "DELETEME1498412146561"
-2017-06-25 14:35:46.711 DROP TABLE "DELETEME1498412146561" CASCADE
-2017-06-25 14:35:46.714 Tiempo de cumplir = 3 ms
-2017-06-25 14:35:47.185 La columna ""simple"."Marca"."id"" añadió a la representación de la table.
-2017-06-25 14:35:47.185 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BIGINT but sql-type=BIGINT is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:47.186 Campo [DATASTORE_ID] -> Columnas ["simple"."Marca"."id"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2017-06-25 14:35:47.188 La columna ""simple"."SimpleObject"."id"" añadió a la representación de la table.
-2017-06-25 14:35:47.188 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BIGINT but sql-type=BIGINT is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:47.188 Campo [DATASTORE_ID] -> Columnas ["simple"."SimpleObject"."id"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
-2017-06-25 14:35:47.189 La tabla "simple"."SimpleObject" va a manejar la persistencia de los campos de la clase domainapp.dom.simple.SimpleObject (estrategia de heredar="new-table")
-2017-06-25 14:35:47.190 La columna ""simple"."SimpleObject"."apellido"" añadió a la representación de la table.
-2017-06-25 14:35:47.194 Campo [domainapp.dom.simple.SimpleObject.apellido] -> Columnas ["simple"."SimpleObject"."apellido"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.195 La columna ""simple"."SimpleObject"."dni"" añadió a la representación de la table.
-2017-06-25 14:35:47.196 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:47.196 Campo [domainapp.dom.simple.SimpleObject.dni] -> Columnas ["simple"."SimpleObject"."dni"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
-2017-06-25 14:35:47.197 La columna ""simple"."SimpleObject"."idActivo"" añadió a la representación de la table.
-2017-06-25 14:35:47.197 Campo [domainapp.dom.simple.SimpleObject.idActivo] -> Columnas ["simple"."SimpleObject"."idActivo"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.197 La columna ""simple"."SimpleObject"."name"" añadió a la representación de la table.
-2017-06-25 14:35:47.197 Campo [domainapp.dom.simple.SimpleObject.name] -> Columnas ["simple"."SimpleObject"."name"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.198 La columna ""simple"."SimpleObject"."notes"" añadió a la representación de la table.
-2017-06-25 14:35:47.198 Campo [domainapp.dom.simple.SimpleObject.notes] -> Columnas ["simple"."SimpleObject"."notes"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.201 La columna ""simple"."SimpleObject"."sexo"" añadió a la representación de la table.
-2017-06-25 14:35:47.201 Campo [domainapp.dom.simple.SimpleObject.sexo] -> Columnas ["simple"."SimpleObject"."sexo"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.EnumMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.201 La columna ""simple"."SimpleObject"."version"" añadió a la representación de la table.
-2017-06-25 14:35:47.202 Attempt to find JDBC driver 'typeInfo' for jdbc-type=TIMESTAMP but sql-type=TIMESTAMP is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:47.202 Campo [VERSION] -> Columnas ["simple"."SimpleObject"."version"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.VersionTimestampMapping" (org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping)
-2017-06-25 14:35:47.202 Table/View "simple"."SimpleObject" ha sido inicializado
-2017-06-25 14:35:47.202 La tabla "simple"."Marca" va a manejar la persistencia de los campos de la clase domainapp.dom.marca.Marca (estrategia de heredar="new-table")
-2017-06-25 14:35:47.203 La columna ""simple"."Marca"."attachment_name"" añadió a la representación de la table.
-2017-06-25 14:35:47.203 La columna ""simple"."Marca"."attachment_mimetype"" añadió a la representación de la table.
-2017-06-25 14:35:47.203 La columna ""simple"."Marca"."attachment_bytes"" añadió a la representación de la table.
-2017-06-25 14:35:47.204 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BLOB but sql-type=BLOB is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:47.204 Campo [domainapp.dom.marca.Marca.attachment] -> Columnas ["simple"."Marca"."attachment_name","simple"."Marca"."attachment_mimetype","simple"."Marca"."attachment_bytes"] usando mapping del tipo "org.apache.isis.objectstore.jdo.datanucleus.valuetypes.IsisBlobMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping,org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping,org.apache.isis.objectstore.jdo.datanucleus.valuemappings.ByteArrayBlobRdbmsMapping)
-2017-06-25 14:35:47.204 La columna ""simple"."Marca"."nombre"" añadió a la representación de la table.
-2017-06-25 14:35:47.204 Campo [domainapp.dom.marca.Marca.nombre] -> Columnas ["simple"."Marca"."nombre"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.205 La columna ""simple"."Marca"."notes"" añadió a la representación de la table.
-2017-06-25 14:35:47.205 Campo [domainapp.dom.marca.Marca.notes] -> Columnas ["simple"."Marca"."notes"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
-2017-06-25 14:35:47.205 La columna ""simple"."Marca"."version"" añadió a la representación de la table.
-2017-06-25 14:35:47.205 Attempt to find JDBC driver 'typeInfo' for jdbc-type=TIMESTAMP but sql-type=TIMESTAMP is not found. Using default sql-type for this jdbc-type.
-2017-06-25 14:35:47.205 Campo [VERSION] -> Columnas ["simple"."Marca"."version"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.VersionTimestampMapping" (org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping)
-2017-06-25 14:35:47.205 Table/View "simple"."Marca" ha sido inicializado
-2017-06-25 14:35:47.212 Empezando transaccion del esquema con conneccion "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@1dd9a3ae" y isolacion "serializable"
-2017-06-25 14:35:47.215 Check of existence of "simple"."SimpleObject" returned table type of TABLE
-2017-06-25 14:35:47.216 Cargando información de columna para las tablas "SimpleObject" por el Catalogo "", el Esquema "simple"
-2017-06-25 14:35:47.227 Información de columna cargado por el Catalogo "", el Esquema "simple", 1 tablas, tiempo = 11 ms
-2017-06-25 14:35:47.227 Información de columna cargado por la tabla "SimpleObject" : hemos encontrado 8 columnas
-2017-06-25 14:35:47.230 Check of existence of "simple"."Marca" returned table type of TABLE
-2017-06-25 14:35:47.230 Cargando información de columna para las tablas "Marca" por el Catalogo "", el Esquema "simple"
-2017-06-25 14:35:47.234 Información de columna cargado por el Catalogo "", el Esquema "simple", 1 tablas, tiempo = 4 ms
-2017-06-25 14:35:47.234 Información de columna cargado por la tabla "Marca" : hemos encontrado 7 columnas
-2017-06-25 14:35:47.244 Validando 2 llaves unicas de la tabla "simple"."SimpleObject"
-2017-06-25 14:35:47.266 Validando 0 foreign key(s) de la tabla "simple"."SimpleObject"
-2017-06-25 14:35:47.269 Validando 2 indic(es) de la tabla "simple"."SimpleObject"
-2017-06-25 14:35:47.273 Validando 2 llaves unicas de la tabla "simple"."Marca"
-2017-06-25 14:35:47.299 Validando 0 foreign key(s) de la tabla "simple"."Marca"
-2017-06-25 14:35:47.304 Validando 2 indic(es) de la tabla "simple"."Marca"
-2017-06-25 14:35:47.304 Committing transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@1dd9a3ae"
-2017-06-25 14:35:47.304 Cerrando la conneccion de la transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@1dd9a3ae"
-2017-06-25 14:36:01.687 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
-2017-06-25 14:36:02.680 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
-2017-06-25 14:36:02.689 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
-2017-06-25 14:36:16.432 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
-2017-06-25 14:36:16.762 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
-2017-06-25 14:36:16.764 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
-2017-06-25 14:36:16.766 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
-2017-06-25 14:36:16.769 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
-2017-06-25 14:36:18.669 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
-2017-06-25 14:36:18.714 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
-2017-06-25 14:36:39.493 INSERT INTO "simple"."Marca" ("attachment_name","attachment_mimetype","attachment_bytes","nombre","notes","version") VALUES (<null>,<null>,<UNPRINTABLE>,<'Fiat'>,<null>,<2017-06-25 14:36:39.492>)
-2017-06-25 14:36:39.968 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:36:52.708 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:18.059 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:18.063 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:24.170 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:24.171 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:24.229 UPDATE "simple"."Marca" SET "attachment_name"=<'5-Router.docx'>,"attachment_mimetype"=<'application/vnd.openxmlformats-officedocument.wordprocessingml.document'>,"attachment_bytes"=<UNPRINTABLE>, "version"=<2017-06-25 14:37:24.228> WHERE "id"=<3>
-2017-06-25 14:37:25.168 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:31.743 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:32.456 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:44.488 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
-2017-06-25 14:37:45.258 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:18:28.693 Tiempo de cumplir = 4 ms
+2017-06-25 15:18:28.698 No era posible determinar el nombre del catalogo por este DataStore
+2017-06-25 15:18:28.698 Borrar la tabla "DELETEME1498414708688"
+2017-06-25 15:18:28.698 DROP TABLE "DELETEME1498414708688" CASCADE
+2017-06-25 15:18:28.700 Tiempo de cumplir = 2 ms
+2017-06-25 15:18:29.156 La columna ""simple"."Marca"."id"" añadió a la representación de la table.
+2017-06-25 15:18:29.157 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BIGINT but sql-type=BIGINT is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:29.157 Campo [DATASTORE_ID] -> Columnas ["simple"."Marca"."id"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2017-06-25 15:18:29.159 La columna ""simple"."SimpleObject"."id"" añadió a la representación de la table.
+2017-06-25 15:18:29.160 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BIGINT but sql-type=BIGINT is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:29.160 Campo [DATASTORE_ID] -> Columnas ["simple"."SimpleObject"."id"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.DatastoreIdMapping" (org.datanucleus.store.rdbms.mapping.datastore.BigIntRDBMSMapping)
+2017-06-25 15:18:29.160 La tabla "simple"."SimpleObject" va a manejar la persistencia de los campos de la clase domainapp.dom.simple.SimpleObject (estrategia de heredar="new-table")
+2017-06-25 15:18:29.161 La columna ""simple"."SimpleObject"."apellido"" añadió a la representación de la table.
+2017-06-25 15:18:29.163 Campo [domainapp.dom.simple.SimpleObject.apellido] -> Columnas ["simple"."SimpleObject"."apellido"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.163 La columna ""simple"."SimpleObject"."dni"" añadió a la representación de la table.
+2017-06-25 15:18:29.163 Attempt to find JDBC driver 'typeInfo' for jdbc-type=INTEGER but sql-type=INTEGER is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:29.163 Campo [domainapp.dom.simple.SimpleObject.dni] -> Columnas ["simple"."SimpleObject"."dni"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.IntegerMapping" (org.datanucleus.store.rdbms.mapping.datastore.IntegerRDBMSMapping)
+2017-06-25 15:18:29.164 La columna ""simple"."SimpleObject"."idActivo"" añadió a la representación de la table.
+2017-06-25 15:18:29.164 Campo [domainapp.dom.simple.SimpleObject.idActivo] -> Columnas ["simple"."SimpleObject"."idActivo"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.164 La columna ""simple"."SimpleObject"."name"" añadió a la representación de la table.
+2017-06-25 15:18:29.164 Campo [domainapp.dom.simple.SimpleObject.name] -> Columnas ["simple"."SimpleObject"."name"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.164 La columna ""simple"."SimpleObject"."notes"" añadió a la representación de la table.
+2017-06-25 15:18:29.165 Campo [domainapp.dom.simple.SimpleObject.notes] -> Columnas ["simple"."SimpleObject"."notes"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.167 La columna ""simple"."SimpleObject"."sexo"" añadió a la representación de la table.
+2017-06-25 15:18:29.168 Campo [domainapp.dom.simple.SimpleObject.sexo] -> Columnas ["simple"."SimpleObject"."sexo"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.EnumMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.168 La columna ""simple"."SimpleObject"."version"" añadió a la representación de la table.
+2017-06-25 15:18:29.169 Attempt to find JDBC driver 'typeInfo' for jdbc-type=TIMESTAMP but sql-type=TIMESTAMP is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:29.169 Campo [VERSION] -> Columnas ["simple"."SimpleObject"."version"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.VersionTimestampMapping" (org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping)
+2017-06-25 15:18:29.169 Table/View "simple"."SimpleObject" ha sido inicializado
+2017-06-25 15:18:29.170 La tabla "simple"."Marca" va a manejar la persistencia de los campos de la clase domainapp.dom.marca.Marca (estrategia de heredar="new-table")
+2017-06-25 15:18:29.170 La columna ""simple"."Marca"."attachment_name"" añadió a la representación de la table.
+2017-06-25 15:18:29.171 La columna ""simple"."Marca"."attachment_mimetype"" añadió a la representación de la table.
+2017-06-25 15:18:29.171 La columna ""simple"."Marca"."attachment_bytes"" añadió a la representación de la table.
+2017-06-25 15:18:29.172 Attempt to find JDBC driver 'typeInfo' for jdbc-type=BLOB but sql-type=BLOB is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:29.172 Campo [domainapp.dom.marca.Marca.attachment] -> Columnas ["simple"."Marca"."attachment_name","simple"."Marca"."attachment_mimetype","simple"."Marca"."attachment_bytes"] usando mapping del tipo "org.apache.isis.objectstore.jdo.datanucleus.valuetypes.IsisBlobMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping,org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping,org.apache.isis.objectstore.jdo.datanucleus.valuemappings.ByteArrayBlobRdbmsMapping)
+2017-06-25 15:18:29.173 La columna ""simple"."Marca"."nombre"" añadió a la representación de la table.
+2017-06-25 15:18:29.173 Campo [domainapp.dom.marca.Marca.nombre] -> Columnas ["simple"."Marca"."nombre"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.173 La columna ""simple"."Marca"."notes"" añadió a la representación de la table.
+2017-06-25 15:18:29.174 Campo [domainapp.dom.marca.Marca.notes] -> Columnas ["simple"."Marca"."notes"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.StringMapping" (org.datanucleus.store.rdbms.mapping.datastore.VarCharRDBMSMapping)
+2017-06-25 15:18:29.174 La columna ""simple"."Marca"."version"" añadió a la representación de la table.
+2017-06-25 15:18:29.174 Attempt to find JDBC driver 'typeInfo' for jdbc-type=TIMESTAMP but sql-type=TIMESTAMP is not found. Using default sql-type for this jdbc-type.
+2017-06-25 15:18:29.174 Campo [VERSION] -> Columnas ["simple"."Marca"."version"] usando mapping del tipo "org.datanucleus.store.rdbms.mapping.java.VersionTimestampMapping" (org.datanucleus.store.rdbms.mapping.datastore.TimestampRDBMSMapping)
+2017-06-25 15:18:29.174 Table/View "simple"."Marca" ha sido inicializado
+2017-06-25 15:18:29.177 Empezando transaccion del esquema con conneccion "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@1dd9a3ae" y isolacion "serializable"
+2017-06-25 15:18:29.180 Check of existence of "simple"."SimpleObject" returned table type of TABLE
+2017-06-25 15:18:29.181 Cargando información de columna para las tablas "SimpleObject" por el Catalogo "", el Esquema "simple"
+2017-06-25 15:18:29.194 Información de columna cargado por el Catalogo "", el Esquema "simple", 1 tablas, tiempo = 13 ms
+2017-06-25 15:18:29.195 Información de columna cargado por la tabla "SimpleObject" : hemos encontrado 8 columnas
+2017-06-25 15:18:29.198 Check of existence of "simple"."Marca" returned table type of TABLE
+2017-06-25 15:18:29.199 Cargando información de columna para las tablas "Marca" por el Catalogo "", el Esquema "simple"
+2017-06-25 15:18:29.204 Información de columna cargado por el Catalogo "", el Esquema "simple", 1 tablas, tiempo = 5 ms
+2017-06-25 15:18:29.204 Información de columna cargado por la tabla "Marca" : hemos encontrado 7 columnas
+2017-06-25 15:18:29.218 Validando 2 llaves unicas de la tabla "simple"."SimpleObject"
+2017-06-25 15:18:29.250 Validando 0 foreign key(s) de la tabla "simple"."SimpleObject"
+2017-06-25 15:18:29.257 Validando 2 indic(es) de la tabla "simple"."SimpleObject"
+2017-06-25 15:18:29.262 Validando 2 llaves unicas de la tabla "simple"."Marca"
+2017-06-25 15:18:29.286 Validando 0 foreign key(s) de la tabla "simple"."Marca"
+2017-06-25 15:18:29.291 Validando 2 indic(es) de la tabla "simple"."Marca"
+2017-06-25 15:18:29.291 Committing transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@1dd9a3ae"
+2017-06-25 15:18:29.292 Cerrando la conneccion de la transaccion del esquema "org.datanucleus.store.rdbms.datasource.dbcp.PoolingDataSource$PoolGuardConnectionWrapper@1dd9a3ae"
+2017-06-25 15:18:50.206 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
+2017-06-25 15:18:51.085 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
+2017-06-25 15:18:51.094 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
+2017-06-25 15:18:58.397 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
+2017-06-25 15:18:58.656 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
+2017-06-25 15:18:58.659 SELECT 'domainapp.dom.simple.SimpleObject' AS "NUCLEUS_TYPE","A0"."apellido","A0"."dni","A0"."idActivo","A0"."name","A0"."notes","A0"."sexo","A0"."id","A0"."version" FROM "simple"."SimpleObject" "A0" WHERE "A0"."idActivo" = '1'
+2017-06-25 15:19:01.926 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:19:02.333 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:19:02.340 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:02.342 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:19:02.344 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:02.348 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:19:02.354 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:02.356 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:19:02.443 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:07.521 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:07.536 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:10.508 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:11.523 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:19.747 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:19:19.833 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:19:19.835 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:19.836 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:19:19.837 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:19.839 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:19:19.842 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:19.844 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:19:19.864 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:22.058 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:22.066 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:24.869 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:24.874 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:36.145 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:19:36.146 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:36.148 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:19:36.149 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:36.151 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:19:36.153 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:19:36.155 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:19:36.185 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:19:55.893 INSERT INTO "simple"."Marca" ("attachment_name","attachment_mimetype","attachment_bytes","nombre","notes","version") VALUES (<'28131701440_615287d35d_o.jpg'>,<'image/jpeg'>,<UNPRINTABLE>,<'Peugeot'>,<null>,<2017-06-25 15:19:55.893>)
+2017-06-25 15:19:56.744 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:04.995 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:05.534 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:07.884 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:20:07.885 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:20:07.887 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:20:07.889 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:20:07.891 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:20:07.893 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:20:07.895 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:20:07.914 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:20:12.392 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:20:12.436 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:20:12.437 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:20:12.438 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:20:12.440 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:20:12.443 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:12.445 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:20:12.446 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:20:12.451 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:20:12.489 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:20:12.496 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:16.755 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:20:16.821 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:20:16.822 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:20:16.824 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:20:16.825 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:20:16.826 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:16.828 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:20:16.830 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:20:16.831 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:20:16.856 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:20:16.869 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:30.755 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:20:30.762 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:23:08.905 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:23:08.980 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:23:08.981 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:23:08.982 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:23:08.983 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:23:08.985 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:23:08.986 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:23:08.988 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:23:08.990 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:23:09.027 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:23:09.034 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:28:05.490 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:28:05.560 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:28:05.561 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:28:05.563 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:28:05.565 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:05.566 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:28:05.568 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:28:05.569 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:28:05.571 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:28:05.606 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:05.613 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:28:22.477 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:28:22.478 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:23.987 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:24.052 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:24.057 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:29.376 SELECT 'domainapp.dom.marca.Marca' AS "NUCLEUS_TYPE","A0"."nombre","A0"."notes","A0"."id","A0"."version" FROM "simple"."Marca" "A0"
+2017-06-25 15:28:29.415 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:28:29.416 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:28:29.417 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:28:29.419 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:29.421 SELECT "A0"."nombre","A0"."notes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>
+2017-06-25 15:28:29.423 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <1>
+2017-06-25 15:28:29.424 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <2>
+2017-06-25 15:28:29.426 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <3>
+2017-06-25 15:28:29.445 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <4>
+2017-06-25 15:28:29.452 SELECT "A0"."attachment_name","A0"."attachment_mimetype","A0"."attachment_bytes","A0"."version" FROM "simple"."Marca" "A0" WHERE "A0"."id" = <5>

@@ -35,7 +35,7 @@
                                 <c:property id="nombre" namedEscaped="true">
                                     <c:action id="updateName"/>
                                 </c:property>
-                               
+                               <c:property id="attachment" namedEscaped="true"/>
                                 <c:property id="notes" namedEscaped="true" multiLine="10" hidden="ALL_TABLES"/>
                             </c:fieldSet>
                         </bs3:col>

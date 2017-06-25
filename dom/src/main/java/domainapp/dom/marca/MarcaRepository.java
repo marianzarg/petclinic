@@ -47,7 +47,7 @@ public class MarcaRepository {
 
 
     public Marca crear(final String nombre, Blob attachment) {
-        final Marca object = new Marca(nombre);
+        final Marca object = new Marca(nombre, attachment);
         serviceRegistry.injectServicesInto(object);
         repositoryService.persist(object);
         return object;
