@@ -29,6 +29,7 @@ public class QMarca extends PersistableExpressionImpl<Marca> implements Persista
 
     public final NumericExpression<Integer> NAME_LENGTH;
     public final StringExpression nombre;
+    public final ObjectExpression<org.apache.isis.applib.value.Blob> attachment;
     public final NumericExpression<Integer> NOTES_LENGTH;
     public final StringExpression notes;
     public final ObjectExpression<org.apache.isis.applib.services.repository.RepositoryService> repositoryService;
@@ -40,6 +41,7 @@ public class QMarca extends PersistableExpressionImpl<Marca> implements Persista
         super(parent, name);
         this.NAME_LENGTH = new NumericExpressionImpl<Integer>(this, "NAME_LENGTH");
         this.nombre = new StringExpressionImpl(this, "nombre");
+        this.attachment = new ObjectExpressionImpl<org.apache.isis.applib.value.Blob>(this, "attachment");
         this.NOTES_LENGTH = new NumericExpressionImpl<Integer>(this, "NOTES_LENGTH");
         this.notes = new StringExpressionImpl(this, "notes");
         this.repositoryService = new ObjectExpressionImpl<org.apache.isis.applib.services.repository.RepositoryService>(this, "repositoryService");
@@ -52,6 +54,7 @@ public class QMarca extends PersistableExpressionImpl<Marca> implements Persista
         super(type, name, exprType);
         this.NAME_LENGTH = new NumericExpressionImpl<Integer>(this, "NAME_LENGTH");
         this.nombre = new StringExpressionImpl(this, "nombre");
+        this.attachment = new ObjectExpressionImpl<org.apache.isis.applib.value.Blob>(this, "attachment");
         this.NOTES_LENGTH = new NumericExpressionImpl<Integer>(this, "NOTES_LENGTH");
         this.notes = new StringExpressionImpl(this, "notes");
         this.repositoryService = new ObjectExpressionImpl<org.apache.isis.applib.services.repository.RepositoryService>(this, "repositoryService");

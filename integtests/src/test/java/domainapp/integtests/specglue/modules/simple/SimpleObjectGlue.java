@@ -44,7 +44,7 @@ public class SimpleObjectGlue extends CukeGlueAbstract {
     
     @When("^I create a new simple object$")
     public void I_create_a_new_simple_object() throws Throwable {
-        service(SimpleObjectMenu.class).create(UUID.randomUUID().toString());
+        service(SimpleObjectMenu.class).create(UUID.randomUUID().toString(), null, 0, null);
     }
     
 }

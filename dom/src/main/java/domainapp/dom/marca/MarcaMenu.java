@@ -30,6 +30,7 @@ import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.annotation.ParameterLayout;
 import org.apache.isis.applib.annotation.SemanticsOf;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
+import org.apache.isis.applib.value.Blob;
 
 
 @DomainService(
@@ -64,9 +65,10 @@ public class MarcaMenu {
     @Action(domainEvent = CreateDomainEvent.class)
     @MemberOrder(sequence = "3")
     public Marca create(
-            @ParameterLayout(named="Nombre") final String nombre)
+            @ParameterLayout(named="Nombre") final String nombre,
+    		@ParameterLayout(named="Adjunto") final Blob attachment)
     {
-        return marcaRepository.crear(nombre);
+        return marcaRepository.crear(nombre, attachment);
     }
 
 

@@ -60,7 +60,7 @@ public class SimpleObjectCreate extends FixtureScript {
 
         String name = checkParam("name", ec, String.class);
         String apellido = checkParam("apellido",ec, String.class);
-        String dni = checkParam("dni",ec, String.class);
+        int dni = checkParam("dni",ec, Integer.class);
         Sexo sexo = checkParam("sexo",ec, Sexo.class);
 
         this.simpleObject = wrap(simpleObjectMenu).create(name,apellido,dni,sexo);

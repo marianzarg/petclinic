@@ -48,11 +48,17 @@ public class SimpleObjectMenu {
     public List<SimpleObject> listAll() {
         return simpleObjectRepository.listAll();
     }
+    @Action(semantics = SemanticsOf.SAFE)
+    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
+    @MemberOrder(sequence = "2")
+    public List<SimpleObject> listarActivos() {
+        return simpleObjectRepository.listarActivos();
+    }
 
 
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
-    @MemberOrder(sequence = "2")
+    @MemberOrder(sequence = "3")
     public List<SimpleObject> buscarPorNombre(
             @ParameterLayout(named="Name")
             final String name
@@ -62,7 +68,7 @@ public class SimpleObjectMenu {
     
     @Action(semantics = SemanticsOf.SAFE)
     @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
-    @MemberOrder(sequence = "3")
+    @MemberOrder(sequence = "4")
     public List<SimpleObject> buscarPorDNI(
             @ParameterLayout(named="DNI")
             final String dni
@@ -72,26 +78,19 @@ public class SimpleObjectMenu {
 
     public static class CreateDomainEvent extends ActionDomainEvent<SimpleObjectMenu> {}
     @Action(domainEvent = CreateDomainEvent.class)
-    @MemberOrder(sequence = "4")
+    @MemberOrder(sequence = "5")
     public SimpleObject create(
     		
             @ParameterLayout(named="Name") final String name, 
             @ParameterLayout(named="Apellido") final String apellido,
-    		@ParameterLayout(named="DNI") final String dni,
+    		@ParameterLayout(named="DNI") final int dni,
     		@ParameterLayout(named="Sexo") final Sexo sexo)
     		
     {
         return simpleObjectRepository.create(name,apellido,dni,sexo,"1");
     }
     
-    @Action(semantics = SemanticsOf.SAFE)
-    @ActionLayout(bookmarking = BookmarkPolicy.AS_ROOT)
-    @MemberOrder(sequence = "5")
-    public List<SimpleObject> listarActivos(
-           
-    ) {
-        return simpleObjectRepository.listarActivos();
-    }
+    
 
 
     @javax.inject.Inject

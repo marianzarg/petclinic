@@ -25,6 +25,7 @@ import org.apache.isis.applib.annotation.NatureOfService;
 import org.apache.isis.applib.query.QueryDefault;
 import org.apache.isis.applib.services.registry.ServiceRegistry2;
 import org.apache.isis.applib.services.repository.RepositoryService;
+import org.apache.isis.applib.value.Blob;
 
 @DomainService(
         nature = NatureOfService.DOMAIN,
@@ -45,7 +46,7 @@ public class MarcaRepository {
     }
 
 
-    public Marca crear(final String nombre) {
+    public Marca crear(final String nombre, Blob attachment) {
         final Marca object = new Marca(nombre);
         serviceRegistry.injectServicesInto(object);
         repositoryService.persist(object);

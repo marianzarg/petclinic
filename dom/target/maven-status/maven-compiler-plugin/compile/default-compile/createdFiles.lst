@@ -4,7 +4,6 @@ domainapp\dom\simple\Sexo.class
 domainapp\dom\simple\SimpleObject$NotesDomainEvent.class
 domainapp\dom\marca\Marca$DeleteDomainEvent.class
 domainapp\dom\marca\Marca.class
-domainapp\dom\simple\SimpleObject$UpdateNameDomainEvent.class
 domainapp\dom\marca\QMarca.class
 domainapp\dom\DomainAppDomainModule.class
 domainapp\dom\marca\MarcaMenu$CreateDomainEvent.class

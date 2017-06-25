@@ -30,7 +30,7 @@ public class QSimpleObject extends PersistableExpressionImpl<SimpleObject> imple
     public final NumericExpression<Integer> NAME_LENGTH;
     public final StringExpression name;
     public final StringExpression apellido;
-    public final StringExpression dni;
+    public final NumericExpression<Integer> dni;
     public final ObjectExpression<domainapp.dom.simple.Sexo> sexo;
     public final StringExpression idActivo;
     public final NumericExpression<Integer> NOTES_LENGTH;
@@ -45,7 +45,7 @@ public class QSimpleObject extends PersistableExpressionImpl<SimpleObject> imple
         this.NAME_LENGTH = new NumericExpressionImpl<Integer>(this, "NAME_LENGTH");
         this.name = new StringExpressionImpl(this, "name");
         this.apellido = new StringExpressionImpl(this, "apellido");
-        this.dni = new StringExpressionImpl(this, "dni");
+        this.dni = new NumericExpressionImpl<Integer>(this, "dni");
         this.sexo = new ObjectExpressionImpl<domainapp.dom.simple.Sexo>(this, "sexo");
         this.idActivo = new StringExpressionImpl(this, "idActivo");
         this.NOTES_LENGTH = new NumericExpressionImpl<Integer>(this, "NOTES_LENGTH");
@@ -61,7 +61,7 @@ public class QSimpleObject extends PersistableExpressionImpl<SimpleObject> imple
         this.NAME_LENGTH = new NumericExpressionImpl<Integer>(this, "NAME_LENGTH");
         this.name = new StringExpressionImpl(this, "name");
         this.apellido = new StringExpressionImpl(this, "apellido");
-        this.dni = new StringExpressionImpl(this, "dni");
+        this.dni = new NumericExpressionImpl<Integer>(this, "dni");
         this.sexo = new ObjectExpressionImpl<domainapp.dom.simple.Sexo>(this, "sexo");
         this.idActivo = new StringExpressionImpl(this, "idActivo");
         this.NOTES_LENGTH = new NumericExpressionImpl<Integer>(this, "NOTES_LENGTH");

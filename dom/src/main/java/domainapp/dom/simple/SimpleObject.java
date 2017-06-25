@@ -82,7 +82,7 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //endregion
 
     //region > constructor
-    public SimpleObject(final String name, final String apellido, final String dni,final Sexo sexo, String idActivo) {
+    public SimpleObject(final String name, final String apellido, final int dni,final Sexo sexo, String idActivo) {
         setName(name);
         setApellido(apellido);
         setDni(dni);
@@ -96,9 +96,6 @@ public class SimpleObject implements Comparable<SimpleObject> {
 
     @javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
     private String name;
-    @Property(
-            editing = Editing.DISABLED
-    )
     public String getName() {
         return name;
     }
@@ -108,10 +105,9 @@ public class SimpleObject implements Comparable<SimpleObject> {
     
     @javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
     private String apellido;
-    
-    @Property(
-            editing = Editing.DISABLED
-    )
+//    @Property(
+//            editing = Editing.DISABLED
+//    )
     public String getApellido() {
 		return apellido;
 	}
@@ -120,14 +116,13 @@ public class SimpleObject implements Comparable<SimpleObject> {
 		this.apellido = apellido;
 	}
 	
-	 @javax.jdo.annotations.Column(allowsNull = "false", length = NAME_LENGTH)
-	 private String dni;
-	 
-	public String getDni() {
+	@javax.jdo.annotations.Column(allowsNull = "false")
+	private int dni;
+	public int getDni() {
 			return dni;
 	}
 
-	public void setDni(String dni) {
+	public void setDni(int dni) {
 			this.dni = dni;
 	}
 	
@@ -136,7 +131,6 @@ public class SimpleObject implements Comparable<SimpleObject> {
 	public Sexo getSexo() {
 		return sexo;
 	}
-
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
 	}
@@ -154,65 +148,65 @@ public class SimpleObject implements Comparable<SimpleObject> {
     //endregion
 	
 	//region > updateName (action)
-    public static class UpdateNameDomainEvent extends ActionDomainEvent<SimpleObject> {}
-    @Action(
-            command = CommandReification.ENABLED,
-            publishing = Publishing.ENABLED,
-            semantics = SemanticsOf.IDEMPOTENT,
-            domainEvent = UpdateNameDomainEvent.class
-    )
-    public SimpleObject actualizarName(@ParameterLayout(named="Name") final String name) {
-        setName(name);
-        return this;
-    }
+//    public static class UpdateNameDomainEvent extends ActionDomainEvent<SimpleObject> {}
+//    @Action(
+//            command = CommandReification.ENABLED,
+//            publishing = Publishing.ENABLED,
+//            semantics = SemanticsOf.IDEMPOTENT,
+//            domainEvent = UpdateNameDomainEvent.class
+//    )
+//    public SimpleObject actualizarName(@ParameterLayout(named="Name") final String name) {
+//        setName(name);
+//        return this;
+//    }
+//    
+//    public SimpleObject updateApellido(@ParameterLayout(named="Apellido") final String apellido){
+//        setApellido(apellido);
+//        return this;
+//        
+//    }
+//    
+//    public SimpleObject updateDNI(@ParameterLayout(named="DNI") final String dni){
+//    	setDni(dni);
+//    	return this;
+//    }
+//    
+//    public SimpleObject updateSexo(@ParameterLayout(named="sexo") final Sexo sexo){
+//    	setSexo(sexo);
+//    	return this;
+//    }
+//    
+//    public SimpleObject updateActivo(@ParameterLayout(named="idActivo") final String idActivo) {
+//        setIdActivo("0");
+//        return this;
+//    }
+//    
+//    
+//    public String default0ActualizarName() {
+//
+//    	return getName();
+//    }
+//    
+//    public String default0UpdateApellido(){
+//    	
+//    	return getApellido();
+//    }
+//    
+//    public String default0UpdateDNI(){
+//    	return getDni();
+//    }
+//    
+//    public Sexo default0UpdateSexo(){
+//    	return getSexo();
+//    }
+//    
+//    public String default0UpdateActivo(){
+//    	return getIdActivo();
+//    }
     
-    public SimpleObject updateApellido(@ParameterLayout(named="Apellido") final String apellido){
-        setApellido(apellido);
-        return this;
-        
-    }
-    
-    public SimpleObject updateDNI(@ParameterLayout(named="DNI") final String dni){
-    	setDni(dni);
-    	return this;
-    }
-    
-    public SimpleObject updateSexo(@ParameterLayout(named="sexo") final Sexo sexo){
-    	setSexo(sexo);
-    	return this;
-    }
-    
-    public SimpleObject updateActivo(@ParameterLayout(named="idActivo") final String idActivo) {
-        setIdActivo("0");
-        return this;
-    }
-    
-    
-    public String default0ActualizarName() {
-
-    	return getName();
-    }
-    
-    public String default0UpdateApellido(){
-    	
-    	return getApellido();
-    }
-    
-    public String default0UpdateDNI(){
-    	return getDni();
-    }
-    
-    public Sexo default0UpdateSexo(){
-    	return getSexo();
-    }
-    
-    public String default0UpdateActivo(){
-    	return getIdActivo();
-    }
-    
-    public TranslatableString validate0ActualizarName(final String name) {
-        return name != null && name.contains("!")? TranslatableString.tr("Exclamation mark is not allowed"): null;
-    }
+//    public TranslatableString validate0ActualizarName(final String name) {
+//        return name != null && name.contains("!")? TranslatableString.tr("Exclamation mark is not allowed"): null;
+//    }
     
     //endregion
 
